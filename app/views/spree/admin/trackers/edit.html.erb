@@ -5,7 +5,7 @@
 
 <%= render partial: 'spree/admin/shared/error_messages', locals: { target: @tracker } %>
 
-<%= form_for [:admin, @tracker] do |f| %>
+<%= form_for [:admin, @tracker], url: spree.admin_tracker_path do |f| %>
   <fieldset>
     <%= render partial: 'form', locals: { f: f } %>
     <%= render partial: 'spree/admin/shared/edit_resource_links' %>
